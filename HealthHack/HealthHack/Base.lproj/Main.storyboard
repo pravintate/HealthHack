@@ -68,8 +68,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="Username.png" disabledBackground="Username.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-aH-4OJ">
-                                <rect key="frame" x="200" y="294" width="200" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="TbJ-YL-ldc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="         User Id" minimumFontSize="17" background="Username.png" disabledBackground="Username.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-aH-4OJ">
+                                <rect key="frame" x="200" y="284" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KMk-wJ-64A"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XQc-u4-zcy"/>
@@ -78,67 +82,66 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-MK-LLc">
-                                <rect key="frame" x="200" y="474" width="200" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Forgot Password"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-qR-D8Z">
-                                <rect key="frame" x="200" y="384" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.013589888" green="0.020543569800000001" blue="0.68698705810000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="200" y="374" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="0.98133780767970658" green="1" blue="0.99889987581517037" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" backgroundImage="Login.png"/>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVB-JT-n4W">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVB-JT-n4W">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Login" id="gi3-Qc-Vt1"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZS-s6-afO">
-                                <rect key="frame" x="200" y="94" width="200" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="qfn-7V-ijY"/>
-                                    <constraint firstAttribute="height" constant="160" id="vlm-1E-2s0"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-vc-7aW">
-                                <rect key="frame" x="200" y="429" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.013589888" green="0.020543569800000001" blue="0.68698705810000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="200" y="419" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="0.98133780770000001" green="1" blue="0.99889987579999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" backgroundImage="Register.png"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="Password.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-97-56S">
-                                <rect key="frame" x="200" y="336" width="200" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="         Password" minimumFontSize="17" background="Password.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-97-56S">
+                                <rect key="frame" x="200" y="326" width="200" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-MK-LLc">
+                                <rect key="frame" x="232" y="467" width="136" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="FiJ-OG-jph"/>
+                                    <constraint firstAttribute="width" constant="136" id="ion-Ew-Mu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" backgroundImage="Forgot your password.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="height" secondItem="7dS-qR-D8Z" secondAttribute="height" id="0Wg-95-zny"/>
-                            <constraint firstItem="fJc-aH-4OJ" firstAttribute="top" secondItem="tZS-s6-afO" secondAttribute="bottom" constant="40" id="1T0-5q-LQs"/>
                             <constraint firstItem="fJc-aH-4OJ" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="2CV-BE-kxA"/>
                             <constraint firstItem="RYV-97-56S" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="7Q3-qT-G2l"/>
                             <constraint firstItem="LZR-vc-7aW" firstAttribute="top" secondItem="7dS-qR-D8Z" secondAttribute="bottom" constant="5" id="C6c-Az-mLr"/>
                             <constraint firstItem="LZR-vc-7aW" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="DZ6-ad-6WI"/>
                             <constraint firstItem="7dS-qR-D8Z" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="EM8-on-Vqu"/>
-                            <constraint firstItem="tZS-s6-afO" firstAttribute="top" secondItem="VdE-Qp-aYx" secondAttribute="bottom" constant="30" id="LC7-85-jR0"/>
-                            <constraint firstItem="7dS-qR-D8Z" firstAttribute="top" secondItem="RYV-97-56S" secondAttribute="bottom" constant="5" id="LYG-hv-G1T"/>
-                            <constraint firstItem="RYV-97-56S" firstAttribute="top" secondItem="fJc-aH-4OJ" secondAttribute="bottom" constant="5" id="MRV-yK-G8T"/>
-                            <constraint firstItem="tZS-s6-afO" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="NNN-Je-w90"/>
-                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="T0A-ez-vth"/>
-                            <constraint firstItem="tZS-s6-afO" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="WWG-69-daw"/>
+                            <constraint firstItem="TbJ-YL-ldc" firstAttribute="top" secondItem="js5-N5-ooW" secondAttribute="top" id="Ezk-7G-uZR"/>
+                            <constraint firstItem="TbJ-YL-ldc" firstAttribute="bottom" secondItem="r82-N7-rFF" secondAttribute="top" id="GMH-rt-Cfl"/>
+                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="top" secondItem="LZR-vc-7aW" secondAttribute="bottom" constant="8" symbolic="YES" id="H3F-II-9uj"/>
+                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="centerX" secondItem="NVB-JT-n4W" secondAttribute="centerX" id="IW2-pa-llj"/>
+                            <constraint firstItem="7dS-qR-D8Z" firstAttribute="top" secondItem="RYV-97-56S" secondAttribute="bottom" constant="8" id="LYG-hv-G1T"/>
+                            <constraint firstItem="RYV-97-56S" firstAttribute="top" secondItem="fJc-aH-4OJ" secondAttribute="bottom" constant="2" id="MRV-yK-G8T"/>
                             <constraint firstItem="LZR-vc-7aW" firstAttribute="height" secondItem="7dS-qR-D8Z" secondAttribute="height" id="Z8n-Ae-Zl6"/>
-                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="top" secondItem="LZR-vc-7aW" secondAttribute="bottom" constant="5" id="dWF-CU-NwO"/>
+                            <constraint firstItem="fJc-aH-4OJ" firstAttribute="top" secondItem="VdE-Qp-aYx" secondAttribute="bottom" constant="220" id="afc-yg-SVR"/>
+                            <constraint firstItem="NVB-JT-n4W" firstAttribute="bottom" secondItem="VdE-Qp-aYx" secondAttribute="bottom" id="bxM-sV-jAs"/>
                             <constraint firstItem="7dS-qR-D8Z" firstAttribute="width" secondItem="RYV-97-56S" secondAttribute="width" id="ddU-ee-Lsz"/>
                             <constraint firstItem="7dS-qR-D8Z" firstAttribute="height" secondItem="RYV-97-56S" secondAttribute="height" id="eQA-73-XNX"/>
-                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="width" secondItem="7dS-qR-D8Z" secondAttribute="width" id="gun-XR-zzl"/>
+                            <constraint firstItem="NVB-JT-n4W" firstAttribute="leading" secondItem="TbJ-YL-ldc" secondAttribute="leading" id="f3O-FE-0nH"/>
+                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="centerX" secondItem="TbJ-YL-ldc" secondAttribute="centerX" id="j6t-RQ-w3P"/>
                             <constraint firstItem="RYV-97-56S" firstAttribute="height" secondItem="fJc-aH-4OJ" secondAttribute="height" id="oNc-jX-CYb"/>
                             <constraint firstItem="RYV-97-56S" firstAttribute="width" secondItem="fJc-aH-4OJ" secondAttribute="width" id="tDM-hT-KMk"/>
                             <constraint firstItem="7dS-qR-D8Z" firstAttribute="centerX" secondItem="js5-N5-ooW" secondAttribute="centerX" id="u7f-SA-TjM"/>
+                            <constraint firstItem="NVB-JT-n4W" firstAttribute="leading" secondItem="js5-N5-ooW" secondAttribute="leading" id="ucV-Oi-6IW"/>
+                            <constraint firstItem="Hbn-MK-LLc" firstAttribute="centerX" secondItem="LZR-vc-7aW" secondAttribute="centerX" id="vAd-ko-f7P"/>
                             <constraint firstItem="LZR-vc-7aW" firstAttribute="width" secondItem="7dS-qR-D8Z" secondAttribute="width" id="vLE-Gq-76R"/>
                         </constraints>
                     </view>
@@ -277,7 +280,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Password.png" width="439" height="81"/>
-        <image name="Username.png" width="439" height="81"/>
+        <image name="Forgot your password.png" width="271" height="24"/>
+        <image name="Login.png" width="439" height="80"/>
+        <image name="Login_bg.png" width="640" height="1136"/>
+        <image name="Password.png" width="365" height="80"/>
+        <image name="Register.png" width="439" height="80"/>
+        <image name="Username.png" width="359" height="80"/>
     </resources>
 </document>
