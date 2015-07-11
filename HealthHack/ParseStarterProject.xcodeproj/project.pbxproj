@@ -213,8 +213,6 @@
 				A1E7836C1B518AB3006C26B9 /* TagsCollectionViewCell.h */,
 				A1E7836D1B518AB3006C26B9 /* TagsCollectionViewCell.m */,
 				A10546441B513DD1003F76E9 /* images */,
-				A10546551B513DD1003F76E9 /* QuestionView.h */,
-				A10546561B513DD1003F76E9 /* QuestionView.m */,
 				09ABC08013A1D52D009C3FCF /* ParseStarterProjectAppDelegate.h */,
 				09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */,
 				09ABC07813A1D52D009C3FCF /* Supporting Files */,

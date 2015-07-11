@@ -4,11 +4,12 @@
 //
 //  Created by Pravin Tate on 7/11/15.
 //  Copyright © 2015 Vinay Jain. All rights reserved.
-//
+// done
 
 #import "QuestionView.h"
+#import "DataManager.h"
 
-@interface QuestionView ()
+@interface QuestionView () <DataDelegate>
 {
     __weak IBOutlet UITextField * questionTitle;
     __weak IBOutlet UITextView * questionDescription;
@@ -51,13 +52,19 @@
     {
         [self sendDataToServer];
     }
-
-    
 }
+
 -(void) sendDataToServer
 {
+    DataManager *obj = [DataManager new];
+    obj.delegate = self;
+    [obj addQuestionWithTitle:questionTitle.text
+                withDescription:questionDescription.text
+                        andTag:questionTag.text];
+    
     
 }
+
 
 
 -(void)showAlertViewWithMessage:(NSString*)title msg:(NSString *)msg inputField:(id)inputField
@@ -82,11 +89,29 @@
     [alert show];
  }
 
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 9_0)
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [inputArea becomeFirstResponder];
+    [inputArea resignFirstResponder];
 }
+-(void)receivedResponseFromServer:(BOOL)success{
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (success){
+            [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Your question has been posted" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+            
+            questionTag.text = @"";
+            questionTitle.text= @"";
+            questionDescription.text = @"";
+            
+            
+        }
+        else{
+            [[[UIAlertView alloc] initWithTitle:@"Request Failed" message:@"There was some problem processing your question" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+        }
+    });
+    
+}
+
 
 
 
