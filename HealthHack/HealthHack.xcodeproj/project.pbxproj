@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DBBAC891B512C0600B20568 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC7E1B512C0600B20568 /* facebook.png */; };
+		3DBBAC8A1B512C0600B20568 /* Forgot your password.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC7F1B512C0600B20568 /* Forgot your password.png */; };
+		3DBBAC8B1B512C0600B20568 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC801B512C0600B20568 /* google.png */; };
+		3DBBAC8C1B512C0600B20568 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC811B512C0600B20568 /* Login.png */; };
+		3DBBAC8D1B512C0600B20568 /* Login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC821B512C0600B20568 /* Login_bg.png */; };
+		3DBBAC8E1B512C0600B20568 /* Login_bg.psd in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC831B512C0600B20568 /* Login_bg.psd */; };
+		3DBBAC8F1B512C0600B20568 /* Login_mocup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC841B512C0600B20568 /* Login_mocup.png */; };
+		3DBBAC901B512C0600B20568 /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC851B512C0600B20568 /* Password.png */; };
+		3DBBAC911B512C0600B20568 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC861B512C0600B20568 /* Register.png */; };
+		3DBBAC921B512C0600B20568 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC871B512C0600B20568 /* twitter.png */; };
+		3DBBAC931B512C0600B20568 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC881B512C0600B20568 /* Username.png */; };
+		3DBBAC951B51312100B20568 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBAC941B51312100B20568 /* BG.png */; };
+		3DBBAC981B51383000B20568 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBAC971B51383000B20568 /* QuestionView.m */; };
 		A10545E41B50F3EC003F76E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10545E31B50F3EC003F76E9 /* main.m */; };
 		A10545E71B50F3EC003F76E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A10545E61B50F3EC003F76E9 /* AppDelegate.m */; };
 		A10545EA1B50F3EC003F76E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10545E91B50F3EC003F76E9 /* ViewController.m */; };
@@ -16,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DBBAC7E1B512C0600B20568 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		3DBBAC7F1B512C0600B20568 /* Forgot your password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forgot your password.png"; sourceTree = "<group>"; };
+		3DBBAC801B512C0600B20568 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
+		3DBBAC811B512C0600B20568 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		3DBBAC821B512C0600B20568 /* Login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_bg.png; sourceTree = "<group>"; };
+		3DBBAC831B512C0600B20568 /* Login_bg.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login_bg.psd; sourceTree = "<group>"; };
+		3DBBAC841B512C0600B20568 /* Login_mocup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_mocup.png; sourceTree = "<group>"; };
+		3DBBAC851B512C0600B20568 /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Password.png; sourceTree = "<group>"; };
+		3DBBAC861B512C0600B20568 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
+		3DBBAC871B512C0600B20568 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		3DBBAC881B512C0600B20568 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
+		3DBBAC941B51312100B20568 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		3DBBAC961B51383000B20568 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = QuestionView/QuestionView.h; sourceTree = "<group>"; };
+		3DBBAC971B51383000B20568 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = QuestionView/QuestionView.m; sourceTree = "<group>"; };
 		A10545DF1B50F3EC003F76E9 /* HealthHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10545E31B50F3EC003F76E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A10545E51B50F3EC003F76E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +66,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DBBAC7C1B512C0600B20568 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBAC7D1B512C0600B20568 /* login_option */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3DBBAC7D1B512C0600B20568 /* login_option */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBAC941B51312100B20568 /* BG.png */,
+				3DBBAC7E1B512C0600B20568 /* facebook.png */,
+				3DBBAC7F1B512C0600B20568 /* Forgot your password.png */,
+				3DBBAC801B512C0600B20568 /* google.png */,
+				3DBBAC811B512C0600B20568 /* Login.png */,
+				3DBBAC821B512C0600B20568 /* Login_bg.png */,
+				3DBBAC831B512C0600B20568 /* Login_bg.psd */,
+				3DBBAC841B512C0600B20568 /* Login_mocup.png */,
+				3DBBAC851B512C0600B20568 /* Password.png */,
+				3DBBAC861B512C0600B20568 /* Register.png */,
+				3DBBAC871B512C0600B20568 /* twitter.png */,
+				3DBBAC881B512C0600B20568 /* Username.png */,
+				3DBBAC961B51383000B20568 /* QuestionView.h */,
+				3DBBAC971B51383000B20568 /* QuestionView.m */,
+			);
+			path = login_option;
+			sourceTree = "<group>";
+		};
 		A10545D61B50F3EB003F76E9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +114,7 @@
 		A10545E11B50F3EC003F76E9 /* HealthHack */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBAC7C1B512C0600B20568 /* images */,
 				A10545E51B50F3EC003F76E9 /* AppDelegate.h */,
 				A10545E61B50F3EC003F76E9 /* AppDelegate.m */,
 				A10545E81B50F3EC003F76E9 /* ViewController.h */,
@@ -136,8 +193,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBBAC911B512C0600B20568 /* Register.png in Resources */,
+				3DBBAC8D1B512C0600B20568 /* Login_bg.png in Resources */,
 				A10545F21B50F3EC003F76E9 /* LaunchScreen.storyboard in Resources */,
+				3DBBAC8F1B512C0600B20568 /* Login_mocup.png in Resources */,
+				3DBBAC921B512C0600B20568 /* twitter.png in Resources */,
+				3DBBAC951B51312100B20568 /* BG.png in Resources */,
+				3DBBAC891B512C0600B20568 /* facebook.png in Resources */,
+				3DBBAC8E1B512C0600B20568 /* Login_bg.psd in Resources */,
+				3DBBAC931B512C0600B20568 /* Username.png in Resources */,
+				3DBBAC8C1B512C0600B20568 /* Login.png in Resources */,
 				A10545EF1B50F3EC003F76E9 /* Assets.xcassets in Resources */,
+				3DBBAC8A1B512C0600B20568 /* Forgot your password.png in Resources */,
+				3DBBAC901B512C0600B20568 /* Password.png in Resources */,
+				3DBBAC8B1B512C0600B20568 /* google.png in Resources */,
 				A10545ED1B50F3EC003F76E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBBAC981B51383000B20568 /* QuestionView.m in Sources */,
 				A10545EA1B50F3EC003F76E9 /* ViewController.m in Sources */,
 				A10545E71B50F3EC003F76E9 /* AppDelegate.m in Sources */,
 				A10545E41B50F3EC003F76E9 /* main.m in Sources */,
