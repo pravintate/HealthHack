@@ -11,9 +11,8 @@
 
 @protocol DataDelegate <NSObject>
 
--(void)receivedResponseFromServer:(BOOL)success;
 @optional
-
+-(void)receivedResponseFromServer:(BOOL)success;
 -(void)receivedDataFromServer:(NSArray *)results;
 
 @end
@@ -24,4 +23,5 @@
 
 -(void)addQuestionWithTitle:(NSString *)title withDescription:(NSString *)description andTag:(NSString*)tag;
 -(void)updateListOfQuestionsWithTag:(NSString *)tag;
+-(void)updateTags;
 @end

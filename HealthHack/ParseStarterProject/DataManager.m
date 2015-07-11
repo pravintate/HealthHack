@@ -26,14 +26,31 @@
 
 -(void)updateListOfQuestionsWithTag:(NSString *)tag{
     
-    
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tag = %@",tag];
     PFQuery *query = [PFQuery queryWithClassName:@"questions" predicate:predicate];
-    
+    [self updateTags];
     [query findObjectsInBackgroundWithBlock:^(NSArray * __nullable results, NSError * __nullable error) {
         if (results) {
             if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
                 [self.delegate receivedDataFromServer:results];
+            }
+        }
+    }];
+}
+
+-(void)updateTags{
+    PFQuery *query = [PFQuery queryWithClassName:@"questions"];
+    [query selectKeys:@[@"tag"]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {
+        if (results) {
+            NSMutableOrderedSet *set= [NSMutableOrderedSet new];
+            for (PFObject *obj in results) {
+                [set addObject:obj[@"tag"]];
+            }
+            
+            NSArray *distinctTags = [set array];
+            if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
+                [self.delegate receivedDataFromServer:distinctTags];
             }
         }
     }];
