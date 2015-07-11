@@ -24,4 +24,6 @@
 -(void)addQuestionWithTitle:(NSString *)title withDescription:(NSString *)description andTag:(NSString*)tag;
 -(void)updateListOfQuestionsWithTag:(NSString *)tag;
 -(void)updateTags;
+-(void)updateAnswersForQuestionID:(NSString *)questionID;
+-(void)addAnswer:(NSString *)answer toQuestionWithID:(NSString *)questionID;
 @end

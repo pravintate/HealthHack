@@ -28,7 +28,6 @@
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tag = %@",tag];
     PFQuery *query = [PFQuery queryWithClassName:@"questions" predicate:predicate];
-    [self updateTags];
     [query findObjectsInBackgroundWithBlock:^(NSArray * __nullable results, NSError * __nullable error) {
         if (results) {
             if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
@@ -47,7 +46,6 @@
             for (PFObject *obj in results) {
                 [set addObject:obj[@"tag"]];
             }
-            
             NSArray *distinctTags = [set array];
             if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
                 [self.delegate receivedDataFromServer:distinctTags];
@@ -56,10 +54,37 @@
     }];
 }
 
--(void)addAnswer:(NSString *)answer toQuestionWithID:(NSString *)questiolnID{
+-(void)updateAnswersForQuestionID:(NSString *)questionID{
     
-    
-    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"questionID = %@",questionID];
+    PFQuery *query = [PFQuery queryWithClassName:@"answers" predicate:predicate];
+    [query selectKeys:@[@"answer"]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray * __nullable results, NSError * __nullable error) {
+        if (results) {
+            NSMutableArray *answers = [NSMutableArray new];
+            for (PFObject *obj in results) {
+                [answers addObject:obj[@"answer"]];
+            }
+            if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
+                [self.delegate receivedDataFromServer:answers];
+            }
+        }
+    }];
+}
+
+-(void)addAnswer:(NSString *)answer toQuestionWithID:(NSString *)questionID{
+    PFQuery *query = [PFQuery queryWithClassName:@"questions"];
+    [query getObjectInBackgroundWithId:questionID block:^(PFObject * __nullable object, NSError * __nullable error) {
+        PFObject *answerToQuestion = [PFObject objectWithClassName:@"answers"];
+        answerToQuestion[@"answer"] = answer;
+        answerToQuestion[@"questionID"] = object[@"objectId"];
+        
+        [answerToQuestion saveInBackgroundWithBlock:^(BOOL succeeded, NSError * __nullable error) {
+            if ([self.delegate respondsToSelector:@selector(receivedDataFromServer:)]) {
+                [self.delegate receivedResponseFromServer:succeeded];
+            }
+        }];
+    }];
 }
 
 @end
