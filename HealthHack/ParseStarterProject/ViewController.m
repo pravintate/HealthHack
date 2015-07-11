@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "DataManager.h"
-@interface ViewController ()<DataDelegate>
+@interface ViewController ()
 
 @end
 
