@@ -7,8 +7,9 @@
 //
 
 #import "QuestionView.h"
+#import "DataManager.h"
 
-@interface QuestionView ()
+@interface QuestionView () <DataDelegate>
 {
     __weak IBOutlet UITextField * questionTitle;
     __weak IBOutlet UITextView * questionDescription;
@@ -51,13 +52,19 @@
     {
         [self sendDataToServer];
     }
-
-    
 }
+
 -(void) sendDataToServer
 {
+    DataManager *obj = [DataManager new];
+    obj.delegate = self;
+    [obj addQuestionWithTitle:questionTitle.text
+                withDescription:questionDescription.text
+                        andTag:questionTag.text];
+    
     
 }
+
 
 
 -(void)showAlertViewWithMessage:(NSString*)title msg:(NSString *)msg inputField:(id)inputField
@@ -82,11 +89,22 @@
     [alert show];
  }
 
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 9_0)
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [inputArea becomeFirstResponder];
+    [inputArea resignFirstResponder];
 }
+-(void)receivedResponseFromServer:(BOOL)success
+{
+    if (success) {
+        NSLog(@"Question uploaded on server");
+    }
+    else
+    {
+        NSLog(@"Question not uploaded on server");
+        ;
+    }
+}
+
 
 
 

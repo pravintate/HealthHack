@@ -17,11 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DataManager *obj = [DataManager new];
-    obj.delegate = self;
-    [obj addQuestionWithTitle:@"What is a medicine" withDescription:@"whayfekffkdmvdf" andTag:@"123"];
-
-    [obj updateListOfQuestionsWithTag:@"123"];
+    
 }
 
 -(void)receivedResponseFromServer:(BOOL)success{
