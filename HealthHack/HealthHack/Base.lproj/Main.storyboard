@@ -68,7 +68,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-aH-4OJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="Username.png" disabledBackground="Username.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-aH-4OJ">
                                 <rect key="frame" x="200" y="294" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KMk-wJ-64A"/>
@@ -78,15 +78,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-97-56S">
-                                <rect key="frame" x="200" y="339" width="200" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-MK-LLc">
                                 <rect key="frame" x="200" y="474" width="200" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Forgot Password"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-qR-D8Z">
+                                <rect key="frame" x="200" y="384" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.013589888" green="0.020543569800000001" blue="0.68698705810000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.98133780767970658" green="1" blue="0.99889987581517037" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login"/>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVB-JT-n4W">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
@@ -108,13 +110,11 @@
                                 <color key="tintColor" red="0.98133780770000001" green="1" blue="0.99889987579999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-qR-D8Z">
-                                <rect key="frame" x="200" y="384" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.013589888" green="0.020543569800000001" blue="0.68698705810000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.98133780767970658" green="1" blue="0.99889987581517037" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login"/>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="Password.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-97-56S">
+                                <rect key="frame" x="200" y="336" width="200" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -180,7 +180,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mail Id" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHq-5P-M35">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHq-5P-M35">
                                 <rect key="frame" x="200" y="207" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="B8W-YY-UtZ"/>
@@ -208,13 +208,13 @@
                                 </constraints>
                                 <state key="normal" title="Female"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bl-D8-Qur">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bl-D8-Qur">
                                 <rect key="frame" x="200" y="314" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.013589888" green="0.020543569800000001" blue="0.68698705810000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.98133780770000001" green="1" blue="0.99889987579999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Doctor"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-t3-VYZ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-t3-VYZ">
                                 <rect key="frame" x="300" y="314" width="87" height="30"/>
                                 <state key="normal" title="Patient"/>
                             </button>
@@ -276,4 +276,8 @@
             <point key="canvasLocation" x="388" y="373"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Password.png" width="439" height="81"/>
+        <image name="Username.png" width="439" height="81"/>
+    </resources>
 </document>
