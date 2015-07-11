@@ -1,65 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Jc-M9-i7Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ws7-5x-rfg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Quora for Doctors-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnS-x1-S2j">
-                                <rect key="frame" x="225" y="477" width="150" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.32946654040000001" blue="0.0002271338281" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="6C9-1j-P7H"/>
-                                    <constraint firstAttribute="height" constant="34" id="I8w-Y5-597"/>
-                                </constraints>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <segue destination="52A-Uk-KGK" kind="show" id="j5e-cW-PHC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-ii-tp6">
-                                <rect key="frame" x="225" y="408" width="150" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.32946654040404044" blue="0.00022713382814527254" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="qEs-nP-Eav" kind="show" id="cm0-yt-95B"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mnS-x1-S2j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EZC-ce-odg"/>
-                            <constraint firstItem="mnS-x1-S2j" firstAttribute="top" secondItem="4Vh-ii-tp6" secondAttribute="bottom" constant="35" id="TuP-Sk-GyH"/>
-                            <constraint firstItem="4Vh-ii-tp6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAK-95-RPT"/>
-                            <constraint firstItem="4Vh-ii-tp6" firstAttribute="height" secondItem="mnS-x1-S2j" secondAttribute="height" id="m3K-J0-KKy"/>
-                            <constraint firstItem="4Vh-ii-tp6" firstAttribute="width" secondItem="mnS-x1-S2j" secondAttribute="width" id="oso-kN-ixt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Vh-ii-tp6" secondAttribute="trailing" constant="205" id="tdU-0v-hNg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mnS-x1-S2j" secondAttribute="bottom" constant="89" id="v0X-Xg-uxU"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Quora for Doctors" id="28W-7u-nrJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1300" y="373"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="6yz-2j-1vO">
             <objects>
-                <viewController id="qEs-nP-Eav" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="qEs-nP-Eav" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VdE-Qp-aYx"/>
                         <viewControllerLayoutGuide type="bottom" id="r82-N7-rFF"/>
@@ -145,10 +94,11 @@
                             <constraint firstItem="LZR-vc-7aW" firstAttribute="width" secondItem="7dS-qR-D8Z" secondAttribute="width" id="vLE-Gq-76R"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Quora for Doctors" id="Tb3-CF-ozJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWE-H0-byu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="369"/>
+            <point key="canvasLocation" x="2740" y="369"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Aqh-sr-G1d">
@@ -258,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff6-qf-SLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="369"/>
+            <point key="canvasLocation" x="3366" y="369"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B4m-3z-TOk">
@@ -270,13 +220,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WTO-Y5-YsO"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ4-bS-h1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="388" y="373"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YfE-mt-xbp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ws7-5x-rfg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mPi-oC-T9H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qEs-nP-Eav" kind="relationship" relationship="rootViewController" id="WYp-CI-gT1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XT-0M-lYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="369"/>
         </scene>
     </scenes>
     <resources>
