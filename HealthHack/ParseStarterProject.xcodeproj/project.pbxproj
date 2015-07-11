@@ -33,6 +33,20 @@
 		A105463C1B51229D003F76E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A105463B1B51229D003F76E9 /* ViewController.m */; };
 		A10546401B512941003F76E9 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A105463F1B512941003F76E9 /* DataManager.m */; };
 		A10546431B513A3B003F76E9 /* QuestionsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10546421B513A3B003F76E9 /* QuestionsListController.m */; };
+		A10546571B513DD1003F76E9 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546461B513DD1003F76E9 /* BG.png */; };
+		A10546581B513DD1003F76E9 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546471B513DD1003F76E9 /* facebook.png */; };
+		A10546591B513DD1003F76E9 /* Forgot your password.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546481B513DD1003F76E9 /* Forgot your password.png */; };
+		A105465A1B513DD1003F76E9 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546491B513DD1003F76E9 /* google.png */; };
+		A105465B1B513DD1003F76E9 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = A105464A1B513DD1003F76E9 /* Login.png */; };
+		A105465C1B513DD1003F76E9 /* Login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A105464B1B513DD1003F76E9 /* Login_bg.png */; };
+		A105465D1B513DD1003F76E9 /* Login_bg.psd in Resources */ = {isa = PBXBuildFile; fileRef = A105464C1B513DD1003F76E9 /* Login_bg.psd */; };
+		A105465E1B513DD1003F76E9 /* Login_mocup.png in Resources */ = {isa = PBXBuildFile; fileRef = A105464D1B513DD1003F76E9 /* Login_mocup.png */; };
+		A105465F1B513DD1003F76E9 /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = A105464E1B513DD1003F76E9 /* Password.png */; };
+		A10546601B513DD1003F76E9 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A10546511B513DD1003F76E9 /* QuestionView.m */; };
+		A10546611B513DD1003F76E9 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546521B513DD1003F76E9 /* Register.png */; };
+		A10546621B513DD1003F76E9 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546531B513DD1003F76E9 /* twitter.png */; };
+		A10546631B513DD1003F76E9 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546541B513DD1003F76E9 /* Username.png */; };
+		A10546641B513DD1003F76E9 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A10546561B513DD1003F76E9 /* QuestionView.m */; };
 		C4C51B571613CE0800959FDC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B541613CE0800959FDC /* Default.png */; };
 		C4C51B581613CE0800959FDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B551613CE0800959FDC /* Default-568h@2x.png */; };
 		C4C51B591613CE0800959FDC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B561613CE0800959FDC /* Default@2x.png */; };
@@ -78,6 +92,22 @@
 		A105463F1B512941003F76E9 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		A10546411B513A3B003F76E9 /* QuestionsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsListController.h; sourceTree = "<group>"; };
 		A10546421B513A3B003F76E9 /* QuestionsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsListController.m; sourceTree = "<group>"; };
+		A10546461B513DD1003F76E9 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		A10546471B513DD1003F76E9 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		A10546481B513DD1003F76E9 /* Forgot your password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forgot your password.png"; sourceTree = "<group>"; };
+		A10546491B513DD1003F76E9 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
+		A105464A1B513DD1003F76E9 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		A105464B1B513DD1003F76E9 /* Login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_bg.png; sourceTree = "<group>"; };
+		A105464C1B513DD1003F76E9 /* Login_bg.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login_bg.psd; sourceTree = "<group>"; };
+		A105464D1B513DD1003F76E9 /* Login_mocup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_mocup.png; sourceTree = "<group>"; };
+		A105464E1B513DD1003F76E9 /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Password.png; sourceTree = "<group>"; };
+		A10546501B513DD1003F76E9 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		A10546511B513DD1003F76E9 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
+		A10546521B513DD1003F76E9 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
+		A10546531B513DD1003F76E9 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		A10546541B513DD1003F76E9 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
+		A10546551B513DD1003F76E9 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		A10546561B513DD1003F76E9 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
 		C4C51B541613CE0800959FDC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C4C51B551613CE0800959FDC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C4C51B561613CE0800959FDC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -147,6 +177,9 @@
 		09ABC07713A1D52D009C3FCF /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				A10546441B513DD1003F76E9 /* images */,
+				A10546551B513DD1003F76E9 /* QuestionView.h */,
+				A10546561B513DD1003F76E9 /* QuestionView.m */,
 				09ABC08013A1D52D009C3FCF /* ParseStarterProjectAppDelegate.h */,
 				09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */,
 				09ABC07813A1D52D009C3FCF /* Supporting Files */,
@@ -198,6 +231,43 @@
 				09ABC07113A1D52D009C3FCF /* UIKit.framework */,
 			);
 			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		A10546441B513DD1003F76E9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A10546451B513DD1003F76E9 /* login_option */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A10546451B513DD1003F76E9 /* login_option */ = {
+			isa = PBXGroup;
+			children = (
+				A10546461B513DD1003F76E9 /* BG.png */,
+				A10546471B513DD1003F76E9 /* facebook.png */,
+				A10546481B513DD1003F76E9 /* Forgot your password.png */,
+				A10546491B513DD1003F76E9 /* google.png */,
+				A105464A1B513DD1003F76E9 /* Login.png */,
+				A105464B1B513DD1003F76E9 /* Login_bg.png */,
+				A105464C1B513DD1003F76E9 /* Login_bg.psd */,
+				A105464D1B513DD1003F76E9 /* Login_mocup.png */,
+				A105464E1B513DD1003F76E9 /* Password.png */,
+				A105464F1B513DD1003F76E9 /* QuestionView */,
+				A10546521B513DD1003F76E9 /* Register.png */,
+				A10546531B513DD1003F76E9 /* twitter.png */,
+				A10546541B513DD1003F76E9 /* Username.png */,
+			);
+			path = login_option;
+			sourceTree = "<group>";
+		};
+		A105464F1B513DD1003F76E9 /* QuestionView */ = {
+			isa = PBXGroup;
+			children = (
+				A10546501B513DD1003F76E9 /* QuestionView.h */,
+				A10546511B513DD1003F76E9 /* QuestionView.m */,
+			);
+			path = QuestionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,11 +322,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */,
+				A10546581B513DD1003F76E9 /* facebook.png in Resources */,
+				A10546591B513DD1003F76E9 /* Forgot your password.png in Resources */,
 				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
+				A10546611B513DD1003F76E9 /* Register.png in Resources */,
+				A105465C1B513DD1003F76E9 /* Login_bg.png in Resources */,
 				C4C51B571613CE0800959FDC /* Default.png in Resources */,
 				A10546391B51222E003F76E9 /* Main.storyboard in Resources */,
+				A105465D1B513DD1003F76E9 /* Login_bg.psd in Resources */,
 				C4C51B581613CE0800959FDC /* Default-568h@2x.png in Resources */,
+				A10546621B513DD1003F76E9 /* twitter.png in Resources */,
+				A10546631B513DD1003F76E9 /* Username.png in Resources */,
 				C4C51B591613CE0800959FDC /* Default@2x.png in Resources */,
+				A105465B1B513DD1003F76E9 /* Login.png in Resources */,
+				A105465F1B513DD1003F76E9 /* Password.png in Resources */,
+				A105465A1B513DD1003F76E9 /* google.png in Resources */,
+				A105465E1B513DD1003F76E9 /* Login_mocup.png in Resources */,
+				A10546571B513DD1003F76E9 /* BG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10546641B513DD1003F76E9 /* QuestionView.m in Sources */,
 				A10546431B513A3B003F76E9 /* QuestionsListController.m in Sources */,
 				A105463C1B51229D003F76E9 /* ViewController.m in Sources */,
+				A10546601B513DD1003F76E9 /* QuestionView.m in Sources */,
 				A10546401B512941003F76E9 /* DataManager.m in Sources */,
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m in Sources */,
