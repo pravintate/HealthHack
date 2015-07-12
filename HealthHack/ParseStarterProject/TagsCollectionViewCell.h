@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TagsCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIButton *tagsButton;
+@property (weak, nonatomic) IBOutlet UILabel *tagsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageForTags;
 
 @end
