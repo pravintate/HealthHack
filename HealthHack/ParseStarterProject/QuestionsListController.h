@@ -10,4 +10,6 @@
 
 @interface QuestionsListController : UITableViewController
 
+@property(nonatomic, strong) NSString *tag;
+
 @end
