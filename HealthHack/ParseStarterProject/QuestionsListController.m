@@ -7,15 +7,25 @@
 //
 
 #import "QuestionsListController.h"
+#import "QuestionViewController.h"
 #import <Parse/Parse.h>
 
 @interface QuestionsListController ()<DataDelegate>
 
 @property (nonatomic,strong) NSArray *questions;
-
+@property (nonatomic,strong) NSMutableArray *questionsIDs;
 @end
 
 @implementation QuestionsListController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"QuestionsListController"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -76,9 +86,23 @@
     cell.textLabel.font = [UIFont boldSystemFontOfSize:16];
     cell.detailTextLabel.text = obj[@"description"];
     cell.detailTextLabel.textColor = [UIColor colorWithRed:0.573 green:0.994 blue:1 alpha:1];
-    cell.tag = [obj[@"tag"] intValue];
+    [self.questionsIDs addObject:obj[@"objectId"]];
+
     cell.backgroundColor = [UIColor colorWithRed:0 green:0.793 blue:0.963 alpha:0.6];
     return cell;
+}
+
+-(void)tableView:(nonnull UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    
+    QuestionViewController *obj = [QuestionViewController new];
+    
+    obj.questionID = [self.questionsIDs objectAtIndex:indexPath.row];
+    obj.question.text = cell.detailTextLabel.text;
+    
+    [self.navigationController pushViewController:obj animated:YES];
+    
 }
 
 @end
