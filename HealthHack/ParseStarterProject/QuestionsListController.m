@@ -91,18 +91,18 @@
     cell.backgroundColor = [UIColor colorWithRed:0 green:0.793 blue:0.963 alpha:0.6];
     return cell;
 }
-
--(void)tableView:(nonnull UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    
-    QuestionViewController *obj = [QuestionViewController new];
-    
-    obj.questionID = [self.questionsIDs objectAtIndex:indexPath.row];
-    obj.question.text = cell.detailTextLabel.text;
-    
-    [self.navigationController pushViewController:obj animated:YES];
-    
-}
+//
+//-(void)tableView:(nonnull UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    
+//    
+//    QuestionViewController *obj = [QuestionViewController new];
+//    
+//    obj.questionID = [self.questionsIDs objectAtIndex:indexPath.row];
+//    obj.question.text = cell.detailTextLabel.text;
+//    
+//    [self.navigationController pushViewController:obj animated:YES];
+//    
+//}
 
 @end
