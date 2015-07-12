@@ -42,6 +42,7 @@
 		A10546611B513DD1003F76E9 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546521B513DD1003F76E9 /* Register.png */; };
 		A10546621B513DD1003F76E9 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546531B513DD1003F76E9 /* twitter.png */; };
 		A10546631B513DD1003F76E9 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = A10546541B513DD1003F76E9 /* Username.png */; };
+		A16191F31B5226420024EF0B /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16191F21B5226420024EF0B /* QuestionViewController.m */; };
 		A1E783591B518974006C26B9 /* 02_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E783461B518974006C26B9 /* 02_bg.png */; };
 		A1E7835A1B518974006C26B9 /* b_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E783471B518974006C26B9 /* b_01.png */; };
 		A1E7835B1B518974006C26B9 /* b_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E783481B518974006C26B9 /* b_02.png */; };
@@ -116,8 +117,8 @@
 		A10546521B513DD1003F76E9 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
 		A10546531B513DD1003F76E9 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		A10546541B513DD1003F76E9 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
-		A10546551B513DD1003F76E9 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
-		A10546561B513DD1003F76E9 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
+		A16191F11B5226420024EF0B /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		A16191F21B5226420024EF0B /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		A1E7833E1B514AEA006C26B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A1E783401B514AF6006C26B9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A1E783431B514B6A006C26B9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -223,6 +224,8 @@
 				A105463F1B512941003F76E9 /* DataManager.m */,
 				A10546411B513A3B003F76E9 /* QuestionsListController.h */,
 				A10546421B513A3B003F76E9 /* QuestionsListController.m */,
+				A16191F11B5226420024EF0B /* QuestionViewController.h */,
+				A16191F21B5226420024EF0B /* QuestionViewController.m */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			files = (
 				A10546431B513A3B003F76E9 /* QuestionsListController.m in Sources */,
 				A1E7836E1B518AB3006C26B9 /* TagsCollectionViewCell.m in Sources */,
+				A16191F31B5226420024EF0B /* QuestionViewController.m in Sources */,
 				A105463C1B51229D003F76E9 /* ViewController.m in Sources */,
 				A10546601B513DD1003F76E9 /* QuestionView.m in Sources */,
 				A10546401B512941003F76E9 /* DataManager.m in Sources */,
