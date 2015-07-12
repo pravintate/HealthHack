@@ -484,10 +484,10 @@
             </objects>
             <point key="canvasLocation" x="1186" y="-66"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="iFH-Rv-L9H">
             <objects>
-                <viewController id="bHO-ZJ-Ed8" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" id="bHO-ZJ-Ed8" customClass="QuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vez-pX-6Gt"/>
                         <viewControllerLayoutGuide type="bottom" id="YfV-k6-Vgw"/>
@@ -496,8 +496,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="this is a test label here the questions will be displayed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-EV-ytA">
-                                <rect key="frame" x="0.0" y="72" width="600" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a test label here the questions will be displayed" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-EV-ytA">
+                                <rect key="frame" x="0.0" y="28" width="600" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -624,7 +624,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="y6Z-Sh-M9n"/>
                     <connections>
-                        <outlet property="tableView" destination="FVU-gc-n5q" id="w1q-tC-CJ3"/>
+                        <outlet property="question" destination="3c2-EV-ytA" id="6Pl-Fg-Ryl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-tE-QVv" sceneMemberID="firstResponder"/>
